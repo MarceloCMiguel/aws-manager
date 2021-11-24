@@ -177,7 +177,11 @@ def create_load_balancer(client,client_lb, lb_name,sec_group_id):
                                                                     Subnets=list_subnets_id,
                                                                     SecurityGroups=[sec_group_id],
                                                                     IpAddressType="ipv4",)
+    
     LoadBalancerArn_ = load_balancer_created['LoadBalancers'][0]['LoadBalancerArn']
+    LoadBalancerDNS = load_balancer_created['LoadBalancers'][0]['DNSName']
+    with open('LoadBalancerDNS.txt', 'w') as f:
+        f.write(LoadBalancerDNS)
     waiter.wait(LoadBalancerArns=[LoadBalancerArn_])
     logging.info(f"Load Balancer {lb_name} created")
     return LoadBalancerArn_
@@ -185,6 +189,14 @@ def create_load_balancer(client,client_lb, lb_name,sec_group_id):
 def delete_load_balancer(client_lb,lb_name):
     logging.warning(f"Deleting Load Balancer {lb_name} if exist")
     waiter = client_lb.get_waiter('load_balancers_deleted')
+    logging.warning(f"Deleting Load Balancer txt")
+    try:
+        os.remove("./LoadBalancerDNS.txt")
+        logging.info(f"Load Balancer txt deleted")
+    except Exception as e:
+        logging.error(e)
+        pass
+    
     try:
         load_balancers = client_lb.describe_load_balancers(Names=[lb_name])
     except:

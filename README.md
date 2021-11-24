@@ -1,6 +1,6 @@
 # cloud-project
 
-This repository contains the aws manager, which implements a [Django](https://github.com/MarceloCMiguel/tasks) application using Load Balancer and Auto Scaling. An instance is also created storing a PostgreSQL database. This application was made in Boto3.
+This repository contains the aws manager, which implements a [Django application](https://github.com/MarceloCMiguel/tasks) using Load Balancer and Auto Scaling. An instance is also created storing a PostgreSQL database. This application was made in Boto3.
 
 
 ## How to run

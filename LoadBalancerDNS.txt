@@ -1,1 +1,1 @@
-LB-Django-134257778.us-east-1.elb.amazonaws.com
+LB-Django-671449613.us-east-1.elb.amazonaws.com

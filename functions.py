@@ -313,3 +313,23 @@ def delete_listeners(client_lb, lb_arn):
     for listener in listeners['Listeners']:
         client_lb.delete_listener(ListenerArn = listener['ListenerArn'])
     logging.warning(f"Listeners with arn {lb_arn} deleted")
+
+def create_auto_scaling_policy(lb_client,policy_name,group_name):
+    logging.info(f"Creating (or updating if exist) Auto Scaling Policy {policy_name} with Policy Type `TargetTrackingScaling`")
+    try:
+
+        as_policy_created = lb_client.put_scaling_policy(
+            AutoScalingGroupName= group_name,
+            PolicyName= policy_name,
+            PolicyType='TargetTrackingScaling',
+            TargetTrackingConfiguration={
+                'PredefinedMetricSpecification':{
+                    'PredefinedMetricType':'ASGAverageCPUUtilization'
+                },
+                'TargetValue': 65,
+            }
+        )
+    except Exception as e:
+        logging.error(f"Error creating Auto Scaling Policy {policy_name}")
+    logging.info(f"Policy {policy_name} created")
+

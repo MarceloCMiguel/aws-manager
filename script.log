@@ -1,43 +1,45 @@
-2021-11-24 16:38:28,545 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
-2021-11-24 16:38:29,761 - WARNING - Deleting Load Balancer LB-Django if exist
-2021-11-24 16:38:29,768 - WARNING - Deleting Load Balancer txt
-2021-11-24 16:38:29,768 - INFO - Load Balancer txt deleted
-2021-11-24 16:38:31,739 - WARNING - Load Balancer LB-Django with Arn arn:aws:elasticloadbalancing:us-east-1:248001177325:loadbalancer/app/LB-Django/94656ff2876a0342 deleted
-2021-11-24 16:38:31,739 - WARNING - Deleting AutoScaling group AS-DJANGO if exist
-2021-11-24 16:38:33,065 - WARNING - AutoScaling group AS-DJANGO deleted
-2021-11-24 16:38:33,065 - WARNING - Deleting Image Django Instance if exist
-2021-11-24 16:38:35,932 - WARNING - Image Image Django Instance deleted
-2021-11-24 16:38:35,933 - WARNING - Deleting Launch Configuration Launch-Config-Django if exist
-2021-11-24 16:38:36,342 - WARNING - Launch Configuration Launch-Config-Django deleted
-2021-11-24 16:38:37,351 - WARNING - Deleting Instances ids ['i-0adbb5f3ac72fb4a3']
-2021-11-24 16:41:10,582 - WARNING - Instances with keypair key_pair_marcelo_ohio deleted
-2021-11-24 16:41:11,784 - WARNING - Deleting Instances ids ['i-0b4f9504af8b83253']
-2021-11-24 16:41:27,762 - WARNING - Instances with keypair key_pair_marcelo_north_virginia deleted
-2021-11-24 16:41:28,053 - WARNING - removing key_pair_marcelo_ohio if exist
-2021-11-24 16:41:28,335 - WARNING - removing key_pair_marcelo_north_virginia if exist
-2021-11-24 16:41:28,335 - WARNING - Deleting Target Group TG-DJANGO if exist
-2021-11-24 16:41:29,705 - WARNING - Target Group TG-DJANGO deleted
-2021-11-24 16:41:29,706 - WARNING - Deleting Sec_Group_DB if exist
-2021-11-24 16:41:30,453 - WARNING - Sec_Group_DB deleted
-2021-11-24 16:41:30,453 - WARNING - Deleting Sec_Group_DJ if exist
-2021-11-24 16:41:31,549 - WARNING - Sec_Group_DJ deleted
-2021-11-24 16:41:31,779 - INFO - Writing key_pair_marcelo_ohio.pem in directory ./
-2021-11-24 16:41:32,163 - INFO - Writing key_pair_marcelo_north_virginia.pem in directory ./
-2021-11-24 16:41:33,188 - INFO - Security Group Sec_Group_DB created
-2021-11-24 16:41:34,520 - INFO - Security Group Sec_Group_DJ created
-2021-11-24 16:41:34,520 - INFO - Creating an instance with t2.micro, and keyname key_pair_marcelo_ohio
-2021-11-24 16:43:24,038 - INFO - Instance id: i-06dc36b8dea913966. Instance Public IP:18.222.146.22
-2021-11-24 16:43:24,039 - INFO - Creating an instance with t2.micro, and keyname key_pair_marcelo_north_virginia
-2021-11-24 16:46:00,018 - INFO - Instance id: i-0cbd364b1a0308f9e. Instance Public IP:3.93.149.54
-2021-11-24 16:46:00,018 - INFO - Creating Image (AMI) Image Django Instance using instance ID i-0cbd364b1a0308f9e
-2021-11-24 16:51:55,283 - INFO - Image Image Django Instance created with id ami-05d95e182177c752c
-2021-11-24 16:51:55,592 - WARNING - Deleting Instances ids ['i-0cbd364b1a0308f9e']
-2021-11-24 16:52:41,886 - WARNING - Instances with keypair key_pair_marcelo_north_virginia deleted
-2021-11-24 16:52:44,015 - INFO - Target group TG-DJANGO with Arn arn:aws:elasticloadbalancing:us-east-1:248001177325:targetgroup/TG-DJANGO/21f5d5060a9075d6 created
-2021-11-24 16:52:44,270 - INFO - Creating load balancer called LB-Django with all subnets available
-2021-11-24 16:55:33,183 - INFO - Load Balancer LB-Django created
-2021-11-24 16:55:33,185 - INFO - Creating a Launch Configuration Launch-Config-Django
-2021-11-24 16:55:34,717 - INFO - Launch Configuration Launch-Config-Django created
-2021-11-24 16:55:34,718 - INFO - Creating AutoScaling group with name AS-DJANGO
-2021-11-24 16:55:36,253 - INFO - Auto scaling group AS-DJANGO created
-2021-11-24 16:55:36,253 - INFO - Creating listener to port 80
+2021-12-01 11:36:08,618 - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2021-12-01 11:36:10,104 - WARNING - Deleting Load Balancer LB-Django if exist
+2021-12-01 11:36:10,208 - WARNING - Deleting Load Balancer txt
+2021-12-01 11:36:10,209 - INFO - Load Balancer txt deleted
+2021-12-01 11:36:11,693 - WARNING - Load Balancer LB-Django with Arn arn:aws:elasticloadbalancing:us-east-1:248001177325:loadbalancer/app/LB-Django/b2906647c83f5d91 deleted
+2021-12-01 11:36:11,693 - WARNING - Deleting AutoScaling group AS-DJANGO if exist
+2021-12-01 11:36:12,500 - WARNING - AutoScaling group AS-DJANGO deleted
+2021-12-01 11:36:12,500 - WARNING - Deleting Image Django Instance if exist
+2021-12-01 11:36:14,603 - WARNING - Image Image Django Instance deleted
+2021-12-01 11:36:14,604 - WARNING - Deleting Launch Configuration Launch-Config-Django if exist
+2021-12-01 11:36:14,909 - WARNING - Launch Configuration Launch-Config-Django deleted
+2021-12-01 11:36:15,982 - WARNING - Deleting Instances ids ['i-039743be51192956a']
+2021-12-01 11:37:02,451 - WARNING - Instances with keypair key_pair_marcelo_ohio deleted
+2021-12-01 11:37:02,761 - WARNING - Deleting Instances ids ['i-03823eaef3e65a113']
+2021-12-01 11:37:33,982 - WARNING - Instances with keypair key_pair_marcelo_north_virginia deleted
+2021-12-01 11:37:34,256 - WARNING - removing key_pair_marcelo_ohio if exist
+2021-12-01 11:37:34,532 - WARNING - removing key_pair_marcelo_north_virginia if exist
+2021-12-01 11:37:34,532 - WARNING - Deleting Target Group TG-DJANGO if exist
+2021-12-01 11:37:35,776 - WARNING - Target Group TG-DJANGO deleted
+2021-12-01 11:37:35,777 - WARNING - Deleting Sec_Group_DB if exist
+2021-12-01 11:37:36,455 - WARNING - Sec_Group_DB deleted
+2021-12-01 11:37:36,456 - WARNING - Deleting Sec_Group_DJ if exist
+2021-12-01 11:37:37,360 - WARNING - Sec_Group_DJ deleted
+2021-12-01 11:37:37,594 - INFO - Writing key_pair_marcelo_ohio.pem in directory ./
+2021-12-01 11:37:37,835 - INFO - Writing key_pair_marcelo_north_virginia.pem in directory ./
+2021-12-01 11:37:38,830 - INFO - Security Group Sec_Group_DB created
+2021-12-01 11:37:39,860 - INFO - Security Group Sec_Group_DJ created
+2021-12-01 11:37:39,860 - INFO - Creating an instance with t2.micro, and keyname key_pair_marcelo_ohio
+2021-12-01 11:39:28,652 - INFO - Instance id: i-022cc85cc12fa3321. Instance Public IP:3.133.99.134
+2021-12-01 11:39:28,653 - INFO - Creating an instance with t2.micro, and keyname key_pair_marcelo_north_virginia
+2021-12-01 11:43:22,201 - INFO - Instance id: i-029ce3ed4872d9573. Instance Public IP:52.91.17.174
+2021-12-01 11:43:22,201 - INFO - Creating Image (AMI) Image Django Instance using instance ID i-029ce3ed4872d9573
+2021-12-01 11:47:58,567 - INFO - Image Image Django Instance created with id ami-0a79d2b8ab6fa2c3d
+2021-12-01 11:47:58,948 - WARNING - Deleting Instances ids ['i-029ce3ed4872d9573']
+2021-12-01 11:48:45,249 - WARNING - Instances with keypair key_pair_marcelo_north_virginia deleted
+2021-12-01 11:48:46,976 - INFO - Target group TG-DJANGO with Arn arn:aws:elasticloadbalancing:us-east-1:248001177325:targetgroup/TG-DJANGO/67b733179a3725fc created
+2021-12-01 11:48:47,490 - INFO - Creating load balancer called LB-Django with all subnets available
+2021-12-01 11:50:50,426 - INFO - Load Balancer LB-Django created
+2021-12-01 11:50:50,427 - INFO - Creating a Launch Configuration Launch-Config-Django
+2021-12-01 11:50:51,484 - INFO - Launch Configuration Launch-Config-Django created
+2021-12-01 11:50:51,485 - INFO - Creating AutoScaling group with name AS-DJANGO
+2021-12-01 11:50:53,057 - INFO - Auto scaling group AS-DJANGO created
+2021-12-01 11:50:53,058 - INFO - Creating (or updating if exist) Auto Scaling Policy AS-POLICY-DJANGO with Policy Type `TargetTrackingScaling`
+2021-12-01 11:50:53,595 - INFO - Policy AS-POLICY-DJANGO created
+2021-12-01 11:50:53,595 - INFO - Creating listener to port 80

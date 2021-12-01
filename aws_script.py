@@ -97,5 +97,7 @@ create_launch_configuration(as_north_virginia_,LAUNCH_CONFIG_NAME,image_dj_id,se
 create_auto_scaling_group(ec2_north_virginia_,as_north_virginia_,
                           AUTO_SCALING_GROUP_NAME,LAUNCH_CONFIG_NAME,
                           tg_arn_django)
+                          
+policy = create_auto_scaling_policy(as_north_virginia_,AUTO_SCALING_POLICY_NAME,AUTO_SCALING_GROUP_NAME)
 
 listener_arn = create_listener(lb_north_virginia_,load_balancer_arn,tg_arn_django)
